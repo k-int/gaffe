@@ -31,7 +31,8 @@ define(['angular',
                     }
                 }
             });
-        $urlRouterProvider.otherwise('/dashboard');
+        // $urlRouterProvider.otherwise('/dashboard');
+        $urlRouterProvider.otherwise('/home');
 
     });
 
