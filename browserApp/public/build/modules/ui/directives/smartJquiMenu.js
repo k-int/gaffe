@@ -1,1 +1,1 @@
-define(["modules/ui/module","jquery-ui"],function(a){"use strict";a.registerDirective("smartJquiMenu",function(){return{restrict:"A",link:function(a,b){b.menu()}}})});
+define(["modules/ui/module","jquery-ui"],function(a){"use strict";a.registerDirective("smartJquiMenu",function(){return{restrict:"A",link:function(a,b,c){b.menu()}}})});

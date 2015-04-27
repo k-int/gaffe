@@ -1,1 +1,1 @@
-define(["modules/ui/module","superbox"],function(a){"use strict";a.registerDirective("smartSuperBox",function(){return{restrict:"A",compile:function(a){a.removeAttr("smart-super-box data-smart-super-box"),a.SuperBox()}}})});
+define(["modules/ui/module","superbox"],function(a){"use strict";a.registerDirective("smartSuperBox",function(){return{restrict:"A",compile:function(a,b){a.removeAttr("smart-super-box data-smart-super-box"),a.SuperBox()}}})});

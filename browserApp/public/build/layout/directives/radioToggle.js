@@ -1,1 +1,1 @@
-define(["layout/module"],function(a){"use strict";a.registerDirective("radioToggle",["$log",function(){return{scope:{model:"=ngModel",value:"@value"},link:function(a,b){b.parent().on("click",function(){a.model=a.value,a.$apply()})}}}])});
+define(["layout/module"],function(a){"use strict";a.registerDirective("radioToggle",["$log",function(a){return{scope:{model:"=ngModel",value:"@value"},link:function(a,b,c){b.parent().on("click",function(){a.model=a.value,a.$apply()})}}}])});
