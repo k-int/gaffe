@@ -21,13 +21,13 @@ define([
                         templateUrl: 'app/home/home.html',
                         resolve: {
                             deps: $couchPotatoProvider.resolveDependencies([
-                                'home/HomeCtrl'
+                                // 'home/HomeCtrl'
                             ])
                         }
                     }
                 },
                 data:{
-                    title: 'Home'
+                    title: 'DashHome'
                 }
             });
     });

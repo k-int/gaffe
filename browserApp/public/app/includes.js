@@ -3,6 +3,7 @@ define([
     'auth/module',
     'auth/models/User',
 
+
     // layout
 
     'layout/module',
@@ -35,6 +36,8 @@ define([
     // dashboard
     'dashboard/module',
 
+    'home/module',
+    'home/HomeCtrl',
 
     //components
     'components/language/Language',

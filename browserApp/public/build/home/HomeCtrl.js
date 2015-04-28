@@ -1,0 +1,1 @@
+define(["app"],function(a){"use strict";a.registerController("HomeCtrl",["$scope",function(a){}])});

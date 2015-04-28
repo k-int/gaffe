@@ -1,8 +1,8 @@
-define(['dashboard/module', 'home'], function (module, _) {
+define(['app'], function (module) {
 
-    'use strict';
+    "use strict";
 
-    module.registerController('HomeCtrl', function ($scope, $interval, CalendarEvent) {
+    module.registerController('HomeCtrl', function ($scope) {
 
     });
 

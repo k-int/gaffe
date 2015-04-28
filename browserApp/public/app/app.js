@@ -27,6 +27,7 @@ define([
         'ui.router',
         'ui.bootstrap',
         // App
+        'app.home',
         'app.auth',
         'app.layout',
         'app.chat',
