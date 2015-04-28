@@ -27,7 +27,8 @@ define([
                     }
                 },
                 data:{
-                    title: 'DashHome'
+                    title: 'DashHome',
+                    requireLogin: true  // See http://brewhouse.io/blog/2014/12/09/authentication-made-simple-in-single-page-angularjs-applications.html
                 }
             });
     });

@@ -12,6 +12,8 @@ define(['angular',
 
     module.config(function ($stateProvider, $couchPotatoProvider, $urlRouterProvider) {
 
+      // http://stackoverflow.com/questions/26145871/redirect-on-all-routes-to-login-if-not-authenticated
+      // 
 
         $stateProvider
             .state('app', {
@@ -28,6 +30,8 @@ define(['angular',
                                 'components/chat/directives/asideChatWidget'
                             ])
                         }
+                        // http://stackoverflow.com/questions/22537311/angular-ui-router-login-authentication
+                        // talks about adding an authorization here
                     }
                 }
             });

@@ -70,3 +70,6 @@ define(['app'], function(app) {
 The new created component should refer to 'app' and you should define controller as app.controller
  
  
+
+
+http://brewhouse.io/blog/2014/12/09/authentication-made-simple-in-single-page-angularjs-applications.html
