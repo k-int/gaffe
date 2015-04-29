@@ -96,6 +96,17 @@ define([
         $rootScope.$state = $state;
         $rootScope.$stateParams = $stateParams;
         // editableOptions.theme = 'bs3';
+
+        $rootScope.$on('$stateChangeStart', function (event, toState, toParams) {
+          var requireLogin = toState.data.requireLogin;
+
+          if (requireLogin && typeof $rootScope.currentUser === 'undefined') {
+            event.preventDefault();
+            // get me a login modal!
+            $state.go('login');
+          }
+        });
+
     });
 
     return app;

@@ -10,11 +10,12 @@ define(['auth/module'], function (module) {
             username: undefined,
             picture: undefined
         };
-         $http.get('api/user.json').then(function(response){
+
+        $http.get('api/user.json').then(function(response){
              UserModel.username = response.data.username;
              UserModel.picture= response.data.picture;
              dfd.resolve(UserModel)
-         });
+        });
 
         return UserModel;
     });
