@@ -2,8 +2,10 @@ define(['auth/module'], function (module) {
 
     "use strict";
 
-    module.registerController('LoginCtrl', function ($scope, $state, GooglePlus, User, ezfb) {
+    // module.registerController('LoginCtrl', function ($scope, $state, GooglePlus, User, ezfb) {
+    module.registerController('LoginCtrl', function ($scope, $state, User) {
 
+        /*
         $scope.$on('event:google-plus-signin-success', function (event, authResult) {
             if (authResult.status.method == 'PROMPT') {
                 GooglePlus.getUser().then(function (user) {
@@ -21,5 +23,12 @@ define(['auth/module'], function (module) {
                 $state.go('app.dashboard');
             });
         });
-    })
+        */
+
+        $scope.loginAttempt = function() {
+          console.log("Attempt login");
+          alert("yay");
+          $state.go('app.home');
+        };
+    });
 });

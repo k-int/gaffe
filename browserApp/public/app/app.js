@@ -26,6 +26,7 @@ define([
         'ngAnimate',
         'ui.router',
         'ui.bootstrap',
+
         // App
         'app.home',
         'app.auth',
@@ -103,7 +104,7 @@ define([
           if (requireLogin && typeof $rootScope.currentUser === 'undefined') {
             event.preventDefault();
             // get me a login modal!
-            $state.go('login');
+            $state.go('real-login');
           }
         });
 

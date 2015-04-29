@@ -11,7 +11,7 @@
 
             <p>Login in. To see it in action.</p>
 
-            <form class="m-t" role="form" action="#">
+            <form class="m-t" role="form" ng-submit="loginAttempt()">
                 <div class="form-group">
                     <input type="email" class="form-control" placeholder="Username" required="">
                 </div>
@@ -30,10 +30,6 @@
                 <a class="btn btn-sm btn-white btn-block" ui-sref="account.register">Create an account</a>
 
                 <br/>
-
-                <google-signin></google-signin>
-
-                <facebook-signin></facebook-signin>
 
                 <br/>
             </form>
